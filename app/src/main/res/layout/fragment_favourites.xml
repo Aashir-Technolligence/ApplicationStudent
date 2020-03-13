@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavouritesFragment"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_column="1"
+                        android:text="Student Name" />
+
+                    <TextView
+                        android:id="@+id/txtSName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Sample"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@android:color/black"
+                        android:layout_column="1"
+                        android:text="Contact" />
+
+                    <TextView
+                        android:id="@+id/txtSContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Sample"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@android:color/black"
+                        android:layout_column="1"
+                        android:text="Email" />
+
+                    <TextView
+                        android:id="@+id/txtSEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Sample"/>
+                </TableRow>
+
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/tableLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:stretchColumns="1"
+                >
+
+                <TableRow
+                    android:layout_width="238dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:id="@+id/btnUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/button_background"
+                        android:text="Edit Information"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorTextButton" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

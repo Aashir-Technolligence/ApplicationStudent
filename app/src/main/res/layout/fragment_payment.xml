@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Amount"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:background="@drawable/edit_rectangle"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
+
+
+
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:background="@drawable/button_background"
+
+            android:text="Pay now"
+
+            android:textColor="@color/colorTextButton" />
+        <ProgressBar
+            android:id="@+id/registerProgress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            android:singleLine="true"
+            android:background="@drawable/edit_rectangle"/>
+
+        <EditText
+            android:id="@+id/edtHPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Password"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_rectangle"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtContact"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Contact"
+            android:inputType="number"
+            android:maxLines="1"
+            android:background="@drawable/edit_rectangle"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:background="@drawable/edit_rectangle"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
+
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:background="@drawable/button_background"
+
+            android:text="Register now"
+
+            android:textColor="@color/colorTextButton" />
+        <ProgressBar
+            android:id="@+id/registerProgress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</LinearLayout>

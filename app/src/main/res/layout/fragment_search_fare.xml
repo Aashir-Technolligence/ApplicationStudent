@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFareFragment"
+    android:background="@drawable/background">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/find"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:background="@drawable/edit_rectangle"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchList"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        >
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2,3"
+            >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+                <Button
+                    android:id="@+id/btnRecommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Our Recommendations"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Search Hostel"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:id="@+id/btnHostel"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Search Package"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:id="@+id/btnFilter"
+                    />
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
